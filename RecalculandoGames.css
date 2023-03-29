@@ -1,0 +1,118 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+nav {
+    font-size:medium;
+    line-height: 50px;
+    width: auto;
+    background-color:darksalmon;
+}
+ul {    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: auto;
+}
+li {
+    float: left;
+}
+li a{
+    display: block;
+    padding: 16px;
+    text-decoration: none;
+    color:beige;
+}
+.dropbtn {
+  background-color:darksalmon;
+  color: white;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  height: 82px;
+}
+.dropdown {
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:darksalmon;
+  width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+    color:beige;
+    padding: 12px 16px;
+}
+.dropdown-content a:hover {
+    background-color:lightsalmon;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropbtn {
+  background-color:lightsalmon;
+  }
+main{
+    align-items: center;
+    text-align: center;
+    background-color: antiquewhite;
+    width: 100%;
+}
+#mainTitle {
+    color:brown;
+    font-size: 42px;
+    font-style: italic;
+}
+.title {
+    color: teal;
+    font-size: 30px
+}
+#intro {
+    color: orangered;
+    text-align:center;
+    font-size: 20px;
+}
+button {
+    width: 200px;
+    height: 40px;
+    color: bisque;
+    background-color: brown;
+    cursor: pointer;
+}
+img {
+    width: 300px;
+    border-radius: 30%;
+}
+section {
+    display: flex;
+    width: 100%;
+}
+h2{
+    z-index: -1;
+    position: absolute;
+}
+#column {
+    column-count: 3;
+    float: left;
+    padding: 70px;
+    @media screen and (max-width: 600px) {.column1, .column2, column3 {width: 100%;}}
+    after {
+        content: "";
+        display: table;
+        clear: both;
+}
+.column1 {
+        width: 30%;
+}
+.column2 {
+    width: 40%;
+}
+.column3 {
+    width: 30%;
+}
